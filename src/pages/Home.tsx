@@ -22,9 +22,6 @@ const Home = () => {
 
   const handleDeleteDeck = async (deckID: string) => {
     // S2. After we receive the ID, we call the backend with a delete method in order to delete the selected item with the given ID
-    // await fetch(`http://localhost:3000/decks/${deckID}`, {
-    //   method: "DELETE",
-    // });
 
     // the above code is in the api/deleteDeck.ts
 

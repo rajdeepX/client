@@ -3,6 +3,9 @@ import "./App.css";
 import Home from "./pages/Home";
 import Decks from "./pages/Decks";
 
+// export const BASE_URL = "http://localhost:3000";
+export const BASE_URL = "https://dem0-project.onrender.com";
+
 function App() {
   return (
     <>

@@ -1,5 +1,7 @@
+import { BASE_URL } from "../App";
+
 export default async function deleteDeck(deckID: string) {
-  await fetch(`http://localhost:3000/decks/${deckID}`, {
+  await fetch(`${BASE_URL}/decks/${deckID}`, {
     method: "DELETE",
   });
 }

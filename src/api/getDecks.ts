@@ -1,3 +1,5 @@
+import { BASE_URL } from "../App";
+
 export type TDeck = {
   title: string;
   cards: string[];
@@ -5,6 +7,7 @@ export type TDeck = {
 };
 
 export default async function getDecks(): Promise<TDeck[]> {
-  const response = await fetch("http://localhost:3000/decks");
+  const response = await fetch(`${BASE_URL}/decks`);
+
   return response.json();
 }

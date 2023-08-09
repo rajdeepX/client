@@ -17,6 +17,7 @@ const Decks = () => {
     const { cards: serverCards } = await createCard(deckId!, text);
     setCards(serverCards); //in order to see the changes when we click on the UI
     setText("");
+    console.log(deck);
   };
 
   const handleDeleteCard = async (index: number) => {

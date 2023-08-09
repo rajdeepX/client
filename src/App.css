@@ -1,0 +1,63 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.decks {
+  display: grid;
+  width: 600px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.decks li {
+  position: relative;
+  border: 1px solid #fff;
+  list-style: none;
+  height: 120px;
+  background-color: #fff;
+  border-radius: 10px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.decks li:hover {
+  background-color: #eee;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+
+.App form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.decks li button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 10px;
+}
+
+.decks li button:hover {
+  background-color: #555;
+  color: #fff;
+  transition: 0.4s all;
+}
+
+.decks li a {
+  text-decoration: none;
+  color: inherit;
+}
